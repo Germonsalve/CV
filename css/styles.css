@@ -1,0 +1,102 @@
+         /************Container*******************/
+         
+         body {
+             margin: 0;
+             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+             background-color: #EEEDDE;
+         }
+         
+         .container {
+             max-width: 60%;
+             margin: 0 auto;
+             justify-content: center;
+         }
+         /************Navbar styling****************/
+         
+         nav {
+             display: flex;
+             justify-content: space-between;
+             background-color: #203239;
+             align-items: center;
+             margin: 0 auto;
+             box-shadow: inset 0px 0px 1px 0px #ccc;
+             font-weight: 600;
+         }
+         
+         .logo {
+             max-width: 40px;
+             max-height: 40px;
+             padding: 1rem;
+             border: none;
+             ;
+         }
+         
+         .nav_links {
+             display: flex;
+             flex-direction: row;
+             list-style: none;
+             margin: 0;
+             justify-content: space-between;
+             font-size: large;
+             min-height: 100%;
+         }
+         
+         .nav_links li {
+             padding: 1rem 3rem;
+             text-decoration: none;
+             border-style: solid;
+             border-width: 0 1px 0 1px;
+             border-color: #EEEDDE;
+         }
+         
+         .anchor {
+             color: #EEEDDE;
+             text-decoration: none;
+         }
+         
+         .fa-moon {
+             padding: 1rem 5%;
+             color: #E0DDAA;
+         }
+         /**************Body Styling*******************/
+         
+         .first {
+             padding-top: 5rem;
+             display: flex;
+             justify-content: space-around;
+             align-content: center;
+         }
+         
+         .first img {
+             max-width: 300px;
+             border-radius: 100%;
+             margin: auto;
+             box-shadow: 10px 10px 5px #ccc;
+         }
+         
+         .first_content {
+             margin-right: 15%;
+             text-align: left;
+             color: #203239;
+         }
+         
+         .first_content button {
+             min-width: 60%;
+             padding: 1rem;
+             border-radius: 20px;
+             background-color: #203239;
+             color: #EEEDDE;
+             font-size: large;
+             font-weight: 800;
+             border-style: none;
+         }
+         
+         .first_content button:active {
+             transform: translateY(-4px);
+         }
+         
+         .first_content button:hover {
+             transform: translateY(-4px);
+             box-shadow: 0 5px #ccc;
+             cursor: pointer;
+         }
