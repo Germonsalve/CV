@@ -161,6 +161,7 @@ nav {
     text-align: center;
     font-size: 3rem;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.5rem;
 }
 
 #about p {
@@ -168,10 +169,55 @@ nav {
     text-align: center;
 }
 
+.about_content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.about_cards {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 600;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgb(201, 198, 192);
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.about_cards img {
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about_cards_text {
+    text-align: center;
+    margin: 0 2rem 0 2rem;
+    color: #141E27;
+}
+
+.work_card {
+    margin: auto;
+    justify-content: center;
+}
+
 
 /***************************RESPOSIVE MADIA QUERY ******************************/
 
-@media (max-width: 1026px) {
+@media (max-width: 1550px) {
+    .about_content {
+        display: block;
+    }
+    .about_cards {
+        margin: 4rem auto;
+    }
+}
+
+@media (max-width: 1020px) {
     .home {
         flex-direction: column-reverse;
         padding-top: 6rem;
@@ -184,7 +230,7 @@ nav {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
     .hamburger {
         display: flex;
     }
@@ -213,5 +259,12 @@ nav {
     }
     .nav_links.active {
         display: flex;
+    }
+}
+
+@media (max-width: 705px) {
+    .about_cards {
+        flex-direction: column;
+        max-width: 300px;
     }
 }
