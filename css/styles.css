@@ -1,102 +1,217 @@
-         /************Container*******************/
-         
-         body {
-             margin: 0;
-             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-             background-color: #EEEDDE;
-         }
-         
-         .container {
-             max-width: 60%;
-             margin: 0 auto;
-             justify-content: center;
-         }
-         /************Navbar styling****************/
-         
-         nav {
-             display: flex;
-             justify-content: space-between;
-             background-color: #203239;
-             align-items: center;
-             margin: 0 auto;
-             box-shadow: inset 0px 0px 1px 0px #ccc;
-             font-weight: 600;
-         }
-         
-         .logo {
-             max-width: 40px;
-             max-height: 40px;
-             padding: 1rem;
-             border: none;
-             ;
-         }
-         
-         .nav_links {
-             display: flex;
-             flex-direction: row;
-             list-style: none;
-             margin: 0;
-             justify-content: space-between;
-             font-size: large;
-             min-height: 100%;
-         }
-         
-         .nav_links li {
-             padding: 1rem 3rem;
-             text-decoration: none;
-             border-style: solid;
-             border-width: 0 1px 0 1px;
-             border-color: #EEEDDE;
-         }
-         
-         .anchor {
-             color: #EEEDDE;
-             text-decoration: none;
-         }
-         
-         .fa-moon {
-             padding: 1rem 5%;
-             color: #E0DDAA;
-         }
-         /**************Body Styling*******************/
-         
-         .first {
-             padding-top: 5rem;
-             display: flex;
-             justify-content: space-around;
-             align-content: center;
-         }
-         
-         .first img {
-             max-width: 300px;
-             border-radius: 100%;
-             margin: auto;
-             box-shadow: 10px 10px 5px #ccc;
-         }
-         
-         .first_content {
-             margin-right: 15%;
-             text-align: left;
-             color: #203239;
-         }
-         
-         .first_content button {
-             min-width: 60%;
-             padding: 1rem;
-             border-radius: 20px;
-             background-color: #203239;
-             color: #EEEDDE;
-             font-size: large;
-             font-weight: 800;
-             border-style: none;
-         }
-         
-         .first_content button:active {
-             transform: translateY(-4px);
-         }
-         
-         .first_content button:hover {
-             transform: translateY(-4px);
-             box-shadow: 0 5px #ccc;
-             cursor: pointer;
-         }
+/************Container*******************/
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #EEEDDE;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+/************Navbar styling****************/
+
+nav {
+    position: fixed;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #203239;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    z-index: 999;
+}
+
+.logo {
+    max-width: 40px;
+    max-height: 40px;
+    padding: 0 0 0 1rem;
+    border: none;
+    ;
+}
+
+.nav_links {
+    display: flex;
+    margin: 0 4rem 0 0;
+    padding: 0;
+    justify-content: space-between;
+    font-size: large;
+    min-height: 100%;
+}
+
+.nav_links li {
+    list-style: none;
+    padding: 1.2rem 3rem;
+    border-style: solid;
+    border-width: 0 1px 0 1px;
+    border-color: #EEEDDE;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color: #EEEDDE;
+    display: block;
+}
+
+.nav_links li:hover {
+    background-color: #141E27;
+}
+
+.fa-moon {
+    top: 1.3rem;
+    right: 1.3rem;
+    color: #E0DDAA;
+    position: absolute;
+}
+
+.fa-moon:hover {
+    color: #141E27;
+    cursor: pointer;
+}
+
+
+/************Hamburger Menu Styling***********/
+
+.hamburger {
+    position: absolute;
+    top: 1.2rem;
+    right: 4rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 21px;
+    color: #E0DDAA;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #E0DDAA;
+    border-radius: 10px;
+}
+
+.hamburger .bar:hover {
+    background-color: #141E27;
+}
+
+
+/**************Body Styling*******************/
+
+.home {
+    padding-top: 9rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.home img {
+    max-width: 300px;
+    border-radius: 100%;
+    margin: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0.25, 0.25));
+}
+
+.home_content {
+    margin-right: 15%;
+    text-align: left;
+    color: #203239;
+}
+
+.home_content h1 {
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-size: 3rem;
+}
+
+.home_content button {
+    min-width: 40%;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    background-color: #203239;
+    color: #EEEDDE;
+    font-size: large;
+    font-weight: 800;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home_content button:active {
+    transform: translateY(1px);
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.home_content button:hover {
+    cursor: pointer;
+    color: #E0DDAA;
+}
+
+#about {
+    margin-top: 5rem;
+}
+
+#about h1 {
+    color: #203239;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#about p {
+    color: #203239;
+    text-align: center;
+}
+
+
+/***************************RESPOSIVE MADIA QUERY ******************************/
+
+@media (max-width: 1026px) {
+    .home {
+        flex-direction: column-reverse;
+        padding-top: 6rem;
+    }
+    .home_content {
+        justify-content: left;
+        margin-top: 3rem;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .hamburger {
+        display: flex;
+    }
+    .logo {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav_links {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+    .nav_links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav_links li {
+        text-align: center;
+        border-style: none;
+        padding: .5rem 1rem;
+        background-color: blur;
+    }
+    .nav_links.active {
+        display: flex;
+    }
+}

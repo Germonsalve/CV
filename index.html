@@ -10,32 +10,45 @@
     <!-- CSS linked and Styles-->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Font Awesome CDN -->
+    <!-- Font Awesome CDN and script link-->
+    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/1f3bf6883e.js" crossorigin="anonymous"></script>
+
+
     <title>Gerva Monsalve</title>
 </head>
 
 <body>
     <nav>
         <img class="logo" src="Images/Logo.png" alt="Logo">
-
+        <a href="#" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
         <ul class="nav_links">
-            <li><a class="anchor" href="#home">Home</a></li>
-            <li><a class="anchor" href="#about">About</a></li>
-            <li><a class="anchor" href="#skill">Skills</a></li>
-            <li><a class="anchor" href="#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="fa-solid fa-moon"></i>
     </nav>
 
     <div class="container">
 
-        <div class="first">
-            <div class="first_content">
-                <h1 id="Home">"Hello my name is Gerva Monsalve and I am a work in progress Fullstack Software Developer, Welcome to my Personal Website"</h1>
+        <div class="home" id="Home">
+            <div class="home_content">
+                <h1>Hi!, I'm Gerva</h1>
+                <h2>A full Stack software Developer in the making</h2>
+                <h3>I've been studying programing for the last two years, even though I made a few curses I consider myself a self taught programer, hopefully this website can showcase a litle bit of my frontend skills, Welcome!</h3>
                 <button>Contact Me</button>
             </div>
             <img src="images/Me.png" alt="My Personal Picture">
+        </div>
+        <div id="about">
+            <h1>About Me</h1>
+            <p>My intoduction</p>
         </div>
 
     </div>
