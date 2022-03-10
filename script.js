@@ -14,6 +14,9 @@ console.log(dropDownBox2);
 hamburger.addEventListener('click', function() {
     navbarLinks.classList.toggle("active");
 });
+navbarLinks.addEventListener('click', function() {
+    navbarLinks.classList.toggle('active');
+});
 
 dropDownButton1.addEventListener('click', function() {
     dropDownBox1.classList.toggle("active");

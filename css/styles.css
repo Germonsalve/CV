@@ -317,6 +317,38 @@ nav {
 }
 
 
+/***************************CONTACT ME SECTION *********************************/
+
+.contact_cards {
+    max-width: 200px;
+    padding: .5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #203239;
+    color: #EEEDDE;
+}
+
+.contact_cards p {
+    margin: .5rem 0 0 .5rem;
+    color: rgb(141, 139, 139);
+}
+
+.contact_card_top {
+    display: flex;
+    align-items: center;
+    color: #EEEDDE;
+}
+
+.contact_card_top i {
+    margin: 0 .5rem 0 .5rem;
+}
+
+.contact_card_top h3 {
+    margin: 0;
+}
+
+
 /***************************RESPOSIVE MADIA QUERY ******************************/
 
 @media (max-width: 1200px) {
