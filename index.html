@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <!-----------------------------NAVBAR-------------------------->
     <nav>
         <img class="logo" src="Images/Logo.png" alt="Logo">
         <a href="#" class="hamburger">
@@ -36,6 +37,7 @@
     </nav>
 
     <div class="container">
+        <!-----------------------------HOME SECCTION-------------------------->
 
         <div class="home" id="Home">
             <div class="home_content">
@@ -46,23 +48,24 @@
             </div>
             <img src="images/Me.png" alt="My Personal Picture">
         </div>
+
+        <!-----------------------------ABOUT SECCTION-------------------------->
         <div id="about">
-            <h1>About Me</h1>
-            <p>My intoduction</p>
+            <h1 class="section_h1">About Me</h1>
+            <p class="section_p">My intoduction</p>
             <div class="about_content">
                 <div class="about_cards">
                     <img src="images/Byron Bay.png" alt="ByronPic">
                     <div class="about_cards_text">
                         <h2>Travel</h2>
-                        <p>Been traveling about the world for three years, lived in Australia for most of that time, thats where I'm at in this picture with a slightly diferent hairface style</p>
+                        <p>Been traveling around the world for three years, lived in Australia for most of that time, thats where I'm at in this picture with a slightly diferent hairface style</p>
                     </div>
                 </div>
                 <div class="about_cards">
                     <img src="images/Crossfit.png" alt="Crossfit">
                     <div class="about_cards_text">
                         <h2>Hobbie</h2>
-                        <p>Ask me whatever you want about fitness i've been doing it all my life, I really enjoy it and it's pretty much all I do when im not coding. You may ask yourself, why doesn't this guy just do that as a job? well, I dont want it bocoming
-                            a resposabilty.</p>
+                        <p>Ask me whatever you want about fitness i've been doing it all my life, it's pretty much all I do when im not coding. You may ask yourself, why doesn't this guy just do that as a job? well, I dont want it bocoming a resposabilty.</p>
                     </div>
                 </div>
 
@@ -71,7 +74,131 @@
                 <img src="images/Office1.png" alt="ByronPic">
                 <div class="about_cards_text">
                     <h2>Work</h2>
-                    <p>Been traveling about the world for three years, lived in Australia for most of that time, thats where I'm at in this picture with a slightly diferent hairface style</p>
+                    <p>Since the last two years I spend most of my time coding and learning new stuff. About this page you will notice if you inspect it that I didnt use Bootstrap, I wanted to show that I understand the core concepts, but I use it</p>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------------------SKILLS SECCTION-------------------------->
+        <div id="skills">
+            <h1 class="section_h1">Skills</h1>
+            <p class="section_p">My technical Level</p>
+            <div class="skill_line1">
+                <!-----------------------------FRONTEND SKILL CARD-------------------------->
+                <div class="skill_card">
+                    <div class="skill_card_main" id="skill1">
+                        <i class="fa-solid fa-code skill_card_icons"></i>
+                        <h2 class="skill_card_title">Front End</h2>
+                        <i class="fa-solid fa-sort-down skill_card_icons"></i>
+                    </div>
+                    <div class="dropdown_box">
+                        <div class="dropdown">
+                            <div class="skill_dropdown_text">
+                                <h3>html</h3>
+                                <p>90%</p>
+                            </div>
+                            <div>
+                                <span class="bar90"></span>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="skill_dropdown_text">
+                                <h3>CSS</h3>
+                                <p>90%</p>
+                            </div>
+                            <div>
+                                <span class="bar90"></span>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="skill_dropdown_text ">
+                                <h3>javascript</h3>
+                                <p>80%</p>
+                            </div>
+                            <div>
+                                <span class="bar80"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-----------------------------BACKEND SKILL CARD-------------------------->
+                <div class="skill_card">
+                    <div class="skill_card_main" id="skill2">
+                        <i class="fa-solid fa-server skill_card_icons"></i>
+                        <h2 class="skill_card_title">Back End</h2>
+                        <i class="fa-solid fa-sort-down skill_card_icons"></i>
+                    </div>
+                    <div class="dropdown_box">
+                        <div class="dropdown">
+                            <div class="skill_dropdown_text">
+                                <h3>Node.js</h3>
+                                <p>70%</p>
+                            </div>
+                            <div>
+                                <span class="bar70"></span>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="skill_dropdown_text">
+                                <h3>Express</h3>
+                                <p>90%</p>
+                            </div>
+                            <div>
+                                <span class="bar90"></span>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="skill_dropdown_text">
+                                <h3>MongoDB</h3>
+                                <p>80%</p>
+                            </div>
+                            <div>
+                                <span class="bar80"></span>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="skill_dropdown_text ">
+                                <h3>EJS</h3>
+                                <p>70%</p>
+                            </div>
+                            <div>
+                                <span class="bar70"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="skill_line2">
+                <!----------------------------------------DESIGN SKILL CARD--------------------------->
+                <div class="skill_card">
+                    <div class="skill_card_main" id="skill3">
+                        <i class="fa-solid fa-code skill_card_icons"></i>
+                        <h2 class="skill_card_title">Design</h2>
+                        <i class="fa-solid fa-sort-down skill_card_icons"></i>
+                    </div>
+                    <div class="dropdown_box">
+                        <div class="dropdown">
+                            <div class="skill_dropdown_text">
+                                <h3>Ilustrator</h3>
+                                <p>50%</p>
+                            </div>
+                            <div>
+                                <span class="bar50"></span>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="skill_dropdown_text">
+                                <h3>figma</h3>
+                                <p>50%</p>
+                            </div>
+                            <div>
+                                <span class="bar50"></span>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

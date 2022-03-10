@@ -1,4 +1,4 @@
-/************Container*******************/
+/************Containers*******************/
 
 body {
     margin: 0;
@@ -10,6 +10,19 @@ body {
     max-width: 80%;
     margin: 0 auto;
     justify-content: center;
+}
+
+.section_h1 {
+    color: #203239;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.5rem;
+}
+
+.section_p {
+    color: #203239;
+    text-align: center;
 }
 
 
@@ -102,7 +115,10 @@ nav {
 }
 
 
-/**************Body Styling*******************/
+/**************BODY STYLING*******************************************************************/
+
+
+/***************HOME SECTION*****************/
 
 .home {
     padding-top: 9rem;
@@ -152,44 +168,35 @@ nav {
     color: #E0DDAA;
 }
 
+
+/*************************ABOUT SECTION******************************/
+
 #about {
     margin-top: 5rem;
-}
-
-#about h1 {
-    color: #203239;
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 0.5rem;
-}
-
-#about p {
-    color: #203239;
-    text-align: center;
 }
 
 .about_content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 4rem;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .about_cards {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
     font-weight: 600;
-    max-width: 600px;
+    max-width: 400px;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgb(201, 198, 192);
+    background-color: #ebe9d0;
     align-items: center;
     margin-top: 4rem;
 }
 
 .about_cards img {
-    max-width: 300px;
+    max-width: 150px;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -198,6 +205,7 @@ nav {
     text-align: center;
     margin: 0 2rem 0 2rem;
     color: #141E27;
+    font-size: .8rem;
 }
 
 .work_card {
@@ -206,18 +214,125 @@ nav {
 }
 
 
+/********************SKILL SECTION*********************/
+
+.skill_line1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_line2 {
+    justify-content: center;
+}
+
+.skill_card {
+    width: 300px;
+    margin: 2rem auto;
+}
+
+.skill_card_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    color: #141E27;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #ebe9d0;
+    border-radius: 5px;
+}
+
+.dropdown_box {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+}
+
+.dropdown_box.active {
+    display: block;
+}
+
+.dropdown {
+    padding-bottom: .5rem;
+}
+
+.skill_dropdown_text {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.skill_card_icons {
+    margin: 1rem;
+}
+
+.skill_card_title {
+    margin: 0;
+}
+
+.skill_dropdown_text h3,
+.skill_dropdown_text p {
+    margin-bottom: .5rem;
+}
+
+.bar90 {
+    display: block;
+    border-top: #141E27;
+    border-top-style: solid;
+    max-width: 80%;
+    border-color: #141E27;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.bar80 {
+    display: block;
+    border-top: #141E27;
+    border-top-style: solid;
+    max-width: 70%;
+    border-color: #141E27;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.bar70 {
+    display: block;
+    border-top: #141E27;
+    border-top-style: solid;
+    max-width: 60%;
+    border-color: #141E27;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.bar50 {
+    display: block;
+    border-top: #141E27;
+    border-top-style: solid;
+    max-width: 45%;
+    border-color: #141E27;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
 /***************************RESPOSIVE MADIA QUERY ******************************/
 
-@media (max-width: 1550px) {
+@media (max-width: 1200px) {
+    .about_content {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1020px) {
     .about_content {
         display: block;
     }
     .about_cards {
         margin: 4rem auto;
     }
-}
-
-@media (max-width: 1020px) {
     .home {
         flex-direction: column-reverse;
         padding-top: 6rem;
@@ -260,11 +375,20 @@ nav {
     .nav_links.active {
         display: flex;
     }
+    .skill_line1 {
+        display: block;
+    }
 }
 
-@media (max-width: 705px) {
+@media (max-width: 497px) {
     .about_cards {
         flex-direction: column;
+        max-width: 300px;
+    }
+    .about_cards img {
+        max-width: 300px;
+    }
+    .skill_card {
         max-width: 300px;
     }
 }
