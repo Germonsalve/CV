@@ -43,7 +43,9 @@ function sendMsg(e) {
         Body: "Sent by : " + name.value + "<br><br> Message: " + message.value
     }).then(
         message => alert("Message Sent Succesfully")
+
     );
+    form.reset();
 }
 
 form.addEventListener('submit', sendMsg);

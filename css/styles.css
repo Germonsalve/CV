@@ -25,6 +25,35 @@ body {
     text-align: center;
 }
 
+.side_button {
+    width: 40px;
+    height: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #203239;
+    color: #E0DDAA;
+}
+
+.github {
+    position: fixed;
+    top: 175px;
+    left: 0px;
+}
+
+.instagram {
+    position: fixed;
+    top: 250px;
+    left: 0px;
+}
+
+.side_button:hover {
+    color: #203239;
+    background-color: #E0DDAA;
+    cursor: pointer;
+}
+
 
 /************Navbar styling****************/
 
@@ -403,6 +432,37 @@ form button:active {
     box-shadow: 0px 0px 0px 0px;
 }
 
+textarea {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+/***************************FOOTER STYLING ******************************/
+
+footer {
+    margin-top: 3rem;
+    width: 100%;
+    background-color: #203239;
+    color: #EEEDDE;
+    text-align: center;
+    padding-top: .5rem;
+    box-shadow: 4px 4px 4px 4px rgba(0.25, 0.25, 0.25, 0.25);
+}
+
+footer p {
+    padding: .5rem;
+    margin: 0;
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_icons i {
+    padding: 1rem;
+}
+
 
 /***************************RESPOSIVE MADIA QUERY ******************************/
 
@@ -463,6 +523,9 @@ form button:active {
         display: flex;
     }
     .skill_line1 {
+        display: block;
+    }
+    .contact_container {
         display: block;
     }
 }
