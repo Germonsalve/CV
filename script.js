@@ -6,7 +6,10 @@ const dropDownButton3 = document.getElementById("skill3");
 const dropDownBox1 = document.getElementsByClassName("dropdown_box")[0];
 const dropDownBox2 = document.getElementsByClassName("dropdown_box")[1];
 const dropDownBox3 = document.getElementsByClassName("dropdown_box")[2];
-
+const form = document.getElementsByTagName('form')[0];
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
 
 console.log(form);
 console.log(name);
@@ -32,19 +35,14 @@ dropDownButton3.addEventListener('click', function() {
 
 function sendMsg(e) {
     e.preventDefault();
-    const form = document.getElementsByTagName('form')[0];
-    const name = document.getElementById("name");
-    const email = document.getElementById("email");
-    const message = document.getElementById("message");
-
     Email.send({
         SecureToken: "6b35400b-543c-4820-b4b8-ac691adbb122",
         To: 'germonsalve@icloud.com',
         From: email.value,
-        Subject: "Contact Form",
-        Body: message.value
+        Subject: "Contact Form from Page",
+        Body: "Sent by : " + name.value + "<br><br> Message: " + message.value
     }).then(
-        message => alert(message)
+        message => alert("Message Sent Succesfully")
     );
 }
 
