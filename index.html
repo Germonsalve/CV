@@ -207,39 +207,48 @@
             <h1 class="section_h1">Contact Me</h1>
             <p class="section_p">Connect with me</p>
 
-            <div class="contact_cards_section">
+            <div class="contact_container">
+                <div class="contact_cards_section">
 
-                <div class="contact_cards">
-                    <div class="contact_card_top">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <h3>Whatsapp</h3>
+                    <div class="contact_cards">
+                        <div class="contact_card_top">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <h3>Whatsapp</h3>
+                        </div>
+                        <p>+54 9 2494 576527</p>
                     </div>
-                    <p>+54 9 2494 576527</p>
+                    <div class="contact_cards">
+                        <div class="contact_card_top">
+                            <i class="fa-regular fa-envelope"></i>
+                            <h3>E-mail</h3>
+                        </div>
+                        <p>germonsalve@icloud.com</p>
+                    </div>
+                    <div class="contact_cards">
+                        <div class="contact_card_top">
+                            <i class="fa-regular fa-compass"></i>
+                            <h3>Location</h3>
+                        </div>
+                        <p>Buenos Aires, Argentina</p>
+                    </div>
                 </div>
-                <div class="contact_cards">
-                    <div class="contact_card_top">
-                        <i class="fa-regular fa-envelope"></i>
-                        <h3>E-mail</h3>
-                    </div>
-                    <p>germonsalve@icloud.com</p>
-                </div>
-                <div class="contact_cards">
-                    <div class="contact_card_top">
-                        <i class="fa-regular fa-compass"></i>
-                        <h3>Location</h3>
-                    </div>
-                    <p>Buenos Aires, Argentina</p>
+                <div class="contact-form">
+                    <form>
+                        <h3>Send me a Message</h3>
+                        <input class="form_items" type="text" id="name" placeholder="Your Name" required>
+                        <input class="form_items" type="email" id="email" placeholder="Your E-mail" required>
+                        <textarea class="form_items" id="message" cols="30" rows="10" placeholder="How can I help you?"></textarea>
+                        <button class="form_items" type="submit">Send <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
                 </div>
             </div>
-            <div class="contact-form">
 
-            </div>
         </div>
 
 
 
     </div>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>

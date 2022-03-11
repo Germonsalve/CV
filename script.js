@@ -8,8 +8,10 @@ const dropDownBox2 = document.getElementsByClassName("dropdown_box")[1];
 const dropDownBox3 = document.getElementsByClassName("dropdown_box")[2];
 
 
-console.log(dropDownBox1);
-console.log(dropDownBox2);
+console.log(form);
+console.log(name);
+console.log(email);
+console.log(message)
 
 hamburger.addEventListener('click', function() {
     navbarLinks.classList.toggle("active");
@@ -27,3 +29,23 @@ dropDownButton2.addEventListener('click', function() {
 dropDownButton3.addEventListener('click', function() {
     dropDownBox3.classList.toggle("active");
 });
+
+function sendMsg(e) {
+    e.preventDefault();
+    const form = document.getElementsByTagName('form')[0];
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+
+    Email.send({
+        SecureToken: "6b35400b-543c-4820-b4b8-ac691adbb122",
+        To: 'germonsalve@icloud.com',
+        From: email.value,
+        Subject: "Contact Form",
+        Body: message.value
+    }).then(
+        message => alert(message)
+    );
+}
+
+form.addEventListener('submit', sendMsg);

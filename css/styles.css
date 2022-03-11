@@ -319,14 +319,26 @@ nav {
 
 /***************************CONTACT ME SECTION *********************************/
 
+.contact_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+.contact_cards_section {
+    min-width: 40%;
+    margin: 1.4rem 0;
+}
+
 .contact_cards {
     max-width: 200px;
     padding: .5rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
     background-color: #203239;
     color: #EEEDDE;
+    align-items: center;
 }
 
 .contact_cards p {
@@ -346,6 +358,49 @@ nav {
 
 .contact_card_top h3 {
     margin: 0;
+}
+
+.contact-form {
+    min-width: 60%;
+    margin: 0 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h3 {
+    margin-top: 0;
+    margin-left: .5rem;
+    color: #203239;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form_items {
+    border-radius: 5px;
+    border-style: none;
+    margin: .5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: .5rem;
+}
+
+form button {
+    max-width: 40%;
+    background-color: #203239;
+    color: #EEEDDE;
+    font-size: large;
+    font-weight: 800;
+}
+
+form button:hover {
+    cursor: pointer;
+    color: #E0DDAA;
+}
+
+form button:active {
+    transform: translateY(1px);
+    box-shadow: 0px 0px 0px 0px;
 }
 
 
