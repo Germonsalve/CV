@@ -10,27 +10,34 @@ const form = document.getElementsByTagName('form')[0];
 const name = document.getElementById("name");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
+const arrow1 = document.getElementsByClassName("fa-sort-down")[0];
+const arrow2 = document.getElementsByClassName("fa-sort-down")[1];
+const arrow3 = document.getElementsByClassName("fa-sort-down")[2];
 
-console.log(form);
-console.log(name);
-console.log(email);
-console.log(message)
+console.log(arrow1);
+console.log(arrow2);
+console.log(arrow3);
+
 
 hamburger.addEventListener('click', function() {
     navbarLinks.classList.toggle("active");
 });
 navbarLinks.addEventListener('click', function() {
     navbarLinks.classList.toggle('active');
+
 });
 
 dropDownButton1.addEventListener('click', function() {
     dropDownBox1.classList.toggle("active");
+    arrow1.classList.toggle('active');
 });
 dropDownButton2.addEventListener('click', function() {
     dropDownBox2.classList.toggle("active");
+    arrow2.classList.toggle('active');
 });
 dropDownButton3.addEventListener('click', function() {
     dropDownBox3.classList.toggle("active");
+    arrow3.classList.toggle('active');
 });
 
 function sendMsg(e) {
