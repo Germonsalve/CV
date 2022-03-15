@@ -164,6 +164,12 @@ nav {
 
 .dark {
     background-color: #203239;
+    text-decoration: #EEEDDE !important;
+}
+
+.dark_nav {
+    background-color: #E0DDAA;
+    color: #203239;
 }
 
 
