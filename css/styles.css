@@ -105,16 +105,65 @@ nav {
     background-color: #141E27;
 }
 
-.fa-moon {
-    top: 1.3rem;
-    right: 1.3rem;
-    color: #E0DDAA;
+
+/******************DARKMODE BUTTON ****************/
+
+.switch {
     position: absolute;
+    top: 20px;
+    right: 10px;
+    border-radius: 20px;
+    margin: 0;
+    border-style: none;
+    display: flex;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    padding: 2px 2px 0 2px;
+    background-color: #141E27;
 }
 
-.fa-moon:hover {
-    color: #141E27;
+.switch::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #E0DDAA;
+    top: -1px;
+    left: 0;
+    right: unset;
+    border-radius: 100%;
+    transition: 300ms ease all;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.switch.active:after {
+    right: 0;
+    left: unset;
+}
+
+.switch:hover {
     cursor: pointer;
+}
+
+.switch .fa-moon {
+    padding: 2px 2px 2px 4px;
+}
+
+.switch .fa-sun {
+    padding: 2px 4px 2px 2px;
+}
+
+.fa-moon {
+    color: #E0DDAA;
+}
+
+.fa-sun {
+    color: #E0DDAA;
+}
+
+.dark {
+    background-color: #203239;
 }
 
 

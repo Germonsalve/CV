@@ -13,8 +13,9 @@ const message = document.getElementById("message");
 const arrow1 = document.getElementsByClassName("fa-sort-down")[0];
 const arrow2 = document.getElementsByClassName("fa-sort-down")[1];
 const arrow3 = document.getElementsByClassName("fa-sort-down")[2];
+const btnSwitch = document.getElementById("switch");
 
-console.log(arrow1);
+console.log(btnSwitch);
 console.log(arrow2);
 console.log(arrow3);
 
@@ -39,6 +40,11 @@ dropDownButton3.addEventListener('click', function() {
     dropDownBox3.classList.toggle("active");
     arrow3.classList.toggle('active');
 });
+
+btnSwitch.addEventListener("click", function() {
+    btnSwitch.classList.toggle('active');
+    document.body.classList.toggle('dark');
+})
 
 function sendMsg(e) {
     e.preventDefault();
