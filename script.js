@@ -44,6 +44,9 @@ dropDownButton3.addEventListener('click', function() {
 btnSwitch.addEventListener("click", function() {
     btnSwitch.classList.toggle('active');
     document.body.classList.toggle('dark');
+    document.getElementById("navbar").classList.toggle("dark_nav");
+    document.getElementsByClassName("side_button")[0].classList.toggle("dark_nav");
+    document.getElementsByClassName("side_button")[1].classList.toggle("dark_nav");
 })
 
 function sendMsg(e) {
