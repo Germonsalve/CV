@@ -19,7 +19,7 @@ console.log(document.getElementById("button_home"));
 console.log(document.getElementById("button_contact"));
 console.log(arrow3);
 
-
+//*************************DROPDOWN MENUS AND CARDS **************************/
 hamburger.addEventListener('click', function() {
     navbarLinks.classList.toggle("active");
 });
@@ -41,6 +41,8 @@ dropDownButton3.addEventListener('click', function() {
     arrow3.classList.toggle('active');
 });
 
+//********************DARK BUTTON CLASS ADDER ********************/
+
 btnSwitch.addEventListener("click", function() {
     btnSwitch.classList.toggle('active');
     document.body.classList.toggle('dark');
@@ -52,8 +54,14 @@ btnSwitch.addEventListener("click", function() {
     document.getElementsByClassName("contact_cards")[0].classList.toggle("dark_nav");
     document.getElementsByClassName("contact_cards")[1].classList.toggle("dark_nav");
     document.getElementsByClassName("contact_cards")[2].classList.toggle("dark_nav");
+    document.getElementById("footer").classList.toggle("dark_nav");
+    document.getElementsByClassName("nav_links")[0].classList.toggle("dark_nav");
+    dropDownBox1.classList.toggle("dark_nav");
+    dropDownBox2.classList.toggle("dark_nav");
+    dropDownBox3.classList.toggle("dark_nav");
+});
 
-})
+//*************************EMAIL FUNCTION******************/
 
 function sendMsg(e) {
     e.preventDefault();
@@ -71,3 +79,14 @@ function sendMsg(e) {
 }
 
 form.addEventListener('submit', sendMsg);
+
+/***********************EASY SCROLLDOWN *****************/
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
