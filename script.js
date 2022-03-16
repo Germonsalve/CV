@@ -15,8 +15,8 @@ const arrow2 = document.getElementsByClassName("fa-sort-down")[1];
 const arrow3 = document.getElementsByClassName("fa-sort-down")[2];
 const btnSwitch = document.getElementById("switch");
 
-console.log(btnSwitch);
-console.log(arrow2);
+console.log(document.getElementById("button_home"));
+console.log(document.getElementById("button_contact"));
 console.log(arrow3);
 
 
@@ -47,6 +47,12 @@ btnSwitch.addEventListener("click", function() {
     document.getElementById("navbar").classList.toggle("dark_nav");
     document.getElementsByClassName("side_button")[0].classList.toggle("dark_nav");
     document.getElementsByClassName("side_button")[1].classList.toggle("dark_nav");
+    document.getElementById("button_home").classList.toggle("dark_nav");
+    document.getElementById("button_contact").classList.toggle("dark_nav");
+    document.getElementsByClassName("contact_cards")[0].classList.toggle("dark_nav");
+    document.getElementsByClassName("contact_cards")[1].classList.toggle("dark_nav");
+    document.getElementsByClassName("contact_cards")[2].classList.toggle("dark_nav");
+
 })
 
 function sendMsg(e) {

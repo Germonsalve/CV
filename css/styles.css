@@ -169,8 +169,7 @@ nav {
 }
 
 .dark_nav {
-    background-color: #EEEDDE;
-    color: #203239 !important;
+    background-color: #141E27 !important;
 }
 
 
@@ -196,7 +195,7 @@ nav {
 }
 
 .hamburger .bar:hover {
-    background-color: #141E27;
+    background-color: #141E27 !important;
 }
 
 
