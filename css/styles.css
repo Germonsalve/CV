@@ -654,3 +654,9 @@ footer p {
         border-top-right-radius: 0;
     }
 }
+
+@media (min-width: 768px) {
+    .about_cards {
+        max-width: 30vw;
+    }
+}
