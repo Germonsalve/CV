@@ -11,6 +11,8 @@ body {
     max-width: 80%;
     margin: 0 auto;
     justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 
 .section_h1 {
@@ -43,7 +45,13 @@ body {
 
 .instagram {
     position: fixed;
-    top: 250px;
+    top: 220px;
+    left: 0px;
+}
+
+.linkedin {
+    position: fixed;
+    top: 265px;
     left: 0px;
 }
 
@@ -382,40 +390,36 @@ nav {
 
 .bar90 {
     display: block;
-    border-top: #141E27;
     border-top-style: solid;
     max-width: 80%;
-    border-color: #141E27;
+    border-color: #203239;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
 .bar80 {
     display: block;
-    border-top: #141E27;
     border-top-style: solid;
     max-width: 70%;
-    border-color: #141E27;
+    border-color: #203239;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
 .bar70 {
     display: block;
-    border-top: #141E27;
     border-top-style: solid;
     max-width: 60%;
-    border-color: #141E27;
+    border-color: #203239;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
 .bar50 {
     display: block;
-    border-top: #141E27;
     border-top-style: solid;
     max-width: 45%;
-    border-color: #141E27;
+    border-color: #203239;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -646,7 +650,12 @@ footer p {
     .github {
         position: fixed;
         top: 50px;
-        left: 60px;
+        left: 55px;
+    }
+    .linkedin {
+        position: fixed;
+        top: 50px;
+        left: 100px;
     }
     .side_button {
         border-bottom-left-radius: 10px;

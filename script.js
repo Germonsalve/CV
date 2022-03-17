@@ -49,6 +49,7 @@ btnSwitch.addEventListener("click", function() {
     document.getElementById("navbar").classList.toggle("dark_nav");
     document.getElementsByClassName("side_button")[0].classList.toggle("dark_nav");
     document.getElementsByClassName("side_button")[1].classList.toggle("dark_nav");
+    document.getElementsByClassName("side_button")[2].classList.toggle("dark_nav");
     document.getElementById("button_home").classList.toggle("dark_nav");
     document.getElementById("button_contact").classList.toggle("dark_nav");
     document.getElementsByClassName("contact_cards")[0].classList.toggle("dark_nav");
